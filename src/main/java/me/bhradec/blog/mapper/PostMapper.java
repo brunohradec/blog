@@ -29,5 +29,6 @@ public abstract class PostMapper {
 
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "author", expression = "java(getAuthorByUsername(postCommandDto.getAuthorUsername()))")
+    @Mapping(target = "timestamp", ignore = true)
     public abstract Post toEntity(PostCommandDto postCommandDto) throws NotFoundException;
 }
