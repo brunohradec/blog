@@ -8,4 +8,4 @@ jwt:
   access-token:
     secret: ${ACCESS_TOKEN_SECRET:test_access_secret}
     ttl: ${ACCESS_TOKEN_TTL:86400}
-    issuer: ${ACCESS_TOKEN_ISSUER:spring-web-store}
+    issuer: ${ACCESS_TOKEN_ISSUER:test_token_issuer}
